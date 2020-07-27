@@ -1,0 +1,71 @@
+body{
+    background-color: #f6f6f6;
+    margin: 0%;
+    margin-right: 0%;
+}
+h1{
+   padding: 0.5rem 0em;
+    font-family: 'Great Vibes', cursive;
+    color: #142850;
+    font-weight: 600;
+    font-size: 4rem;
+    
+}
+h3{
+    
+    padding: 0.5rem 0em ;
+    font-family: 'Great Vibes', cursive;
+    color: #142850;
+    font-size: 2rem;
+}
+/* 
+font-family: 'Great Vibes', cursive;
+font-family: 'Lora', serif;
+ */
+/* ***************************Title section***************************** */
+.row{
+    padding: 10% 0% 5%;
+    margin: 0%;
+    text-align: center;
+}
+
+
+.firstSection{
+    width: 100%;
+    height:fit-content;
+    background-color: #bad7df;
+   
+
+    
+}
+.firstImg{
+    margin: 5%;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+#headings{
+    padding-top: 5% ;
+}
+
+/* ***************************Responsive Section************************ */
+
+@media (max-width:900px){
+    #headings{
+        padding: 5% 0% 0% ;
+        font-family: 'Great Vibes', cursive;
+        color: #142850;
+        
+    }
+    h1{
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    .firstImg{
+        width: 150px;
+        height: 150px;
+    }
+}
