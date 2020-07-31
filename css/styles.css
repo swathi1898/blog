@@ -1,7 +1,18 @@
 body{
-    background-color: #f6f6f6;
     margin: 0%;
     margin-right: 0%;
+    position: relative;
+    z-index: 1;
+}
+body::before{
+    content: "";
+    background: url("/home/swathi/Documents/git/blog/image/beach.jpg")  no-repeat center fixed;
+    background-size: cover;
+    position: absolute;
+    width: 100%; 
+    height: 100%;  
+    opacity: .4; 
+    z-index: -1;
 }
 h1{
    padding: 0.5rem 0em;
@@ -24,20 +35,31 @@ font-family: 'Lora', serif;
  */
 /* ***************************Title section***************************** */
 .row{
-    padding: 10% 0% 5%;
+    padding: 10% 0% 1%;
     margin: 0%;
     text-align: center;
 }
 
 
-.firstSection{
+#firstSection,#thirdSection{
     width: 100%;
     height:fit-content;
-    background-color: #bad7df;
+    position: relative;
+    z-index: 1;
    
-
-    
 }
+#firstSection::before,#thirdSection::before{
+    content: "";
+    background-color: #05f1f5;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    opacity: .3; 
+    z-index: -1;
+}
+
 .firstImg{
     margin: 5%;
     position: relative;
@@ -48,6 +70,58 @@ font-family: 'Lora', serif;
 #headings{
     padding-top: 5% ;
 }
+/* ***************************Second section***************************** */
+#secondSection{
+    width: 100%;
+    background-color: #fff;
+    height: fit-content;
+    color:#142850;
+    padding: 0 10% 10%;
+}
+.sec2{
+    /* background-image: linear-gradient(to right,#142850,#0898f8,#142850); */
+    /* background-color: #ffe78f; */
+   
+    padding: 0;
+}
+
+.sec2 h3{
+    text-align: center;
+    color:#142850;
+    font-family: 'Lora', serif;
+}
+p{
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+}
+/* ***************************Second section***************************** */
+#thirdSection{
+    padding: 2% 10% 10%;
+    text-align: center;
+}
+h4{
+    font-family: 'Lora', serif;
+    font-size: 2rem; 
+    color:#142850;
+}
+.button2 {
+    background-image: linear-gradient(#142850,#0898f8);
+    border: solid white 2px;
+    color: white;
+    padding: 2%;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5%;
+    cursor: pointer;
+    border-radius:200%;
+  }
+  .button1{
+      background-color:#95f1f3 ;
+  }
+
+
+
 
 /* ***************************Responsive Section************************ */
 
@@ -67,5 +141,12 @@ font-family: 'Lora', serif;
     .firstImg{
         width: 150px;
         height: 150px;
+    }
+    .sec2 h3{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 1rem;
     }
 }
