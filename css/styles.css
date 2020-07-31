@@ -6,7 +6,7 @@ body{
 }
 body::before{
     content: "";
-    background: url("/home/swathi/Documents/git/blog/image/beach.jpg")  no-repeat center fixed;
+    background: url("https://github.com/swathi1898/blog/blob/master/image/beach.jpg?raw=true")  no-repeat center fixed;
     background-size: cover;
     position: absolute;
     width: 100%; 
