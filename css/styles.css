@@ -6,9 +6,9 @@ body{
 }
 body::before{
     content: "";
-    background: url("https://github.com/swathi1898/blog/blob/master/image/beach.jpg?raw=true")  no-repeat center fixed;
+    background-image: url("../image/beach.jpg");
     background-size: cover;
-    position: absolute;
+    position: fixed;
     width: 100%; 
     height: 100%;  
     opacity: .4; 
@@ -16,7 +16,7 @@ body::before{
 }
 h1{
    padding: 0.5rem 0em;
-    font-family: 'Great Vibes', cursive;
+   font-family: 'Sansita Swashed', cursive;
     color: #142850;
     font-weight: 600;
     font-size: 4rem;
@@ -25,9 +25,15 @@ h1{
 h3{
     
     padding: 0.5rem 0em ;
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Sansita Swashed', cursive;
     color: #142850;
     font-size: 2rem;
+}
+#headings h4{
+    font-family: 'Sansita Swashed', cursive;
+    text-align: left;
+    color: #142850;
+    padding-top: 2%;
 }
 
 /* ***************************Title section***************************** */
@@ -47,7 +53,7 @@ h3{
 }
 #firstSection::before,#thirdSection::before{
     content: "";
-    background-color: #05f1f5;
+    background-color: #1ef8fc;
     position: absolute;
     top: 0; 
     left: 0;
@@ -63,7 +69,7 @@ h3{
     margin: 0 auto;
 }
 /* ***************************Second section***************************** */
-#secondSection{
+#secondSection,#footerSection{
     width: 100%;
     background-color: #fff;
     height: fit-content;
@@ -86,9 +92,9 @@ p{
     font-family: 'Lora', serif;
     font-size: 2rem;
 }
-/* ***************************Second section***************************** */
+/* ***************************Third section***************************** */
 #thirdSection{
-    padding: 2% 10% 10%;
+    padding: 3% 10% ;
     text-align: center;
 }
 h4{
@@ -121,10 +127,19 @@ h4{
     background-image: linear-gradient(rgb(0, 181, 194),rgb(113, 247, 247));
     color: rgb(8, 8, 8);
   }
-  
-  
-  
 
+/* ***************************Footer Section************************ */
+#footerSection{
+    text-align: center;  
+    padding: 2% ; 
+    
+    
+}
+i{
+    font-size: 2rem; 
+    color:#142850;
+    padding:2%;
+}
 
 
 
@@ -143,6 +158,9 @@ h4{
     }
     h3{
         font-size: 1.5rem;
+    }
+    #headings h4{
+        margin-top: 5%;
     }
     .firstImg{
         width: 150px;
