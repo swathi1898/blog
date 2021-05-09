@@ -107,6 +107,16 @@ h4{
     width: 250px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
+    
+}
+.col-default{
+    margin-top: 10px;
+    transition: width 2s, height 2s, transform 0.5s;
+}
+.col-default:hover{
+ 
+  z-index: 10;
+  transform: scale(1.2); 
 }
 .card{
     height: 100%;
@@ -123,7 +133,7 @@ h4{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     color: black;
   }
-  .button2:hover{
+.button2:hover{
     background-image: linear-gradient(rgb(0, 181, 194),rgb(113, 247, 247));
     color: rgb(8, 8, 8);
   }
